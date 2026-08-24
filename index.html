@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101828">
+  <title>Data Structures I — Interactive Course</title>
+  <meta name="description" content="Interactive bilingual Data Structures course.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">DS</div>
+        <div>
+          <strong>Data Structures I</strong>
+          <span>CPCS 204</span>
+        </div>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-line">
+          <span id="progressLabel">تقدمك</span>
+          <strong id="progressText">0%</strong>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <small id="progressHint">ابدأ بأول فصل ثم أكمل بطريقتك.</small>
+      </div>
+
+      <nav id="chapterNav" aria-label="Course chapters"></nav>
+
+      <div class="sidebar-foot">
+        <button id="resetProgress" class="ghost-btn">مسح التقدم</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="crumb" id="crumb">الرئيسية</div>
+        <div class="top-actions">
+          <button class="ghost-btn" id="langBtn">English</button>
+          <button class="ghost-btn" id="themeBtn">الوضع الداكن</button>
+        </div>
+      </header>
+
+      <main id="content" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
